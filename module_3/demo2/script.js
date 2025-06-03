@@ -12,6 +12,7 @@ fetch("https://api.chucknorris.io/jokes/random",
 
     })
 
+//ne jamais faire ça !!!!!
 setTimeout(function(){
     console.log(joke)
 }, 1000)
