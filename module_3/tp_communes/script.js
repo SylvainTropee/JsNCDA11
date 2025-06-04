@@ -29,7 +29,6 @@ async function getCities(data) {
         option.innerText = `${city.nom}`
         document.getElementById('cities').append(option)
     }
-
 }
 
 async function getCity() {
@@ -38,7 +37,6 @@ async function getCity() {
     const p = document.createElement('p')
     p.innerText = `Nom : ${data.nom}, population : ${data.population}, CP : ${data.codesPostaux}`
     document.body.append(p)
-
 }
 
 async function getAll() {
@@ -50,7 +48,6 @@ async function getAll() {
     console.log(data)
     getDepartments(data[0])
     getCities(data[1])
-
 }
 
 window.onload = function () {
